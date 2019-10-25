@@ -1,4 +1,4 @@
-package com.ciupercar;
+package com.mushrooms;
 
 import android.app.Application;
 import android.content.Context;

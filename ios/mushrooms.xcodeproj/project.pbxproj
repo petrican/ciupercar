@@ -5,9 +5,8 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ciupercarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ciupercarTests.m */; };
+		00E356F31AD99517003FC87E /* mushroomsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mushroomsTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -15,7 +14,23 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* ciupercarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ciupercarTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* mushroomsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mushroomsTests.m */; };
+		62817A15D8D64B4AA90DE460 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36A85349ED264E68BE1342D4 /* AntDesign.ttf */; };
+		BB170D51CD4E4A2BA033D192 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5280616870EA43909AA7C838 /* Entypo.ttf */; };
+		AA6A2F9009304E88B9DCCBF9 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B02B102D2DE44007B95E1E7E /* EvilIcons.ttf */; };
+		C8FCE0DF9EAF47ECAC12B4F4 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E6B22AA765644CD98CE05EB /* Feather.ttf */; };
+		9CFBF8825A2B45EC82832BCD /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 368673085A09400AAFEB6BAF /* FontAwesome.ttf */; };
+		20AA65BD19E74D1681E7E0D1 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8844BEF881144D7995EAAF9E /* FontAwesome5_Brands.ttf */; };
+		99389F50AD6A472E8CA00EF3 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E7969C258494AB0AEADF802 /* FontAwesome5_Regular.ttf */; };
+		2E6F126515E54492826FEA7C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD03C0B7F2344AFFA2EB7455 /* FontAwesome5_Solid.ttf */; };
+		85F109E086D341AE839590D8 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD7560F83E214BA89D06E6C5 /* Fontisto.ttf */; };
+		6261B7FB13C64CB6ACA8A6B2 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C70B81BEBB641DCB331937C /* Foundation.ttf */; };
+		8F42604FD67344BF87703F22 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82A90249613D404E896157C6 /* Ionicons.ttf */; };
+		0A16BC84C91F41EFA45B96D8 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3F087F8DEAB84696BA764FA0 /* MaterialCommunityIcons.ttf */; };
+		C93304F1445B474C81867F11 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA7893CFAB84165A0394ABE /* MaterialIcons.ttf */; };
+		964CC20657D94761911C40B7 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59B5326283C24537B4394619 /* Octicons.ttf */; };
+		FB7D1499958C4D5AAAB968B2 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E85968245EA4BB8B15944D8 /* SimpleLineIcons.ttf */; };
+		A1E94F3DAC274A2C8DD65695 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5740240807E443BA88228EA1 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,33 +39,49 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ciupercar;
+			remoteInfo = mushrooms;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "ciupercar-tvOS";
+			remoteInfo = "mushrooms-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* ciupercarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ciupercarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* mushroomsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mushroomsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ciupercarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ciupercarTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ciupercar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ciupercar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ciupercar/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ciupercar/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* mushroomsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mushroomsTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* mushrooms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mushrooms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mushrooms/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mushrooms/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ciupercar/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ciupercar/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ciupercar/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* ciupercar-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ciupercar-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* ciupercar-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ciupercar-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mushrooms/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mushrooms/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mushrooms/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* mushrooms-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mushrooms-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* mushrooms-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mushrooms-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		36A85349ED264E68BE1342D4 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5280616870EA43909AA7C838 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B02B102D2DE44007B95E1E7E /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6E6B22AA765644CD98CE05EB /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		368673085A09400AAFEB6BAF /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8844BEF881144D7995EAAF9E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E7969C258494AB0AEADF802 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD03C0B7F2344AFFA2EB7455 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AD7560F83E214BA89D06E6C5 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3C70B81BEBB641DCB331937C /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		82A90249613D404E896157C6 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3F087F8DEAB84696BA764FA0 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CA7893CFAB84165A0394ABE /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		59B5326283C24537B4394619 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E85968245EA4BB8B15944D8 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5740240807E443BA88228EA1 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +116,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* ciupercarTests */ = {
+		00E356EF1AD99517003FC87E /* mushroomsTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ciupercarTests.m */,
+				00E356F21AD99517003FC87E /* mushroomsTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ciupercarTests;
+			path = mushroomsTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -102,7 +133,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ciupercar */ = {
+		13B07FAE1A68108700A75B9A /* mushrooms */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -113,7 +144,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = ciupercar;
+			name = mushrooms;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -135,11 +166,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* ciupercar */,
+				13B07FAE1A68108700A75B9A /* mushrooms */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ciupercarTests */,
+				00E356EF1AD99517003FC87E /* mushroomsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D19DAAE0514B40279276C22E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,20 +181,44 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ciupercar.app */,
-				00E356EE1AD99517003FC87E /* ciupercarTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* ciupercar-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* ciupercar-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* mushrooms.app */,
+				00E356EE1AD99517003FC87E /* mushroomsTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* mushrooms-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* mushrooms-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D19DAAE0514B40279276C22E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				36A85349ED264E68BE1342D4 /* AntDesign.ttf */,
+				5280616870EA43909AA7C838 /* Entypo.ttf */,
+				B02B102D2DE44007B95E1E7E /* EvilIcons.ttf */,
+				6E6B22AA765644CD98CE05EB /* Feather.ttf */,
+				368673085A09400AAFEB6BAF /* FontAwesome.ttf */,
+				8844BEF881144D7995EAAF9E /* FontAwesome5_Brands.ttf */,
+				5E7969C258494AB0AEADF802 /* FontAwesome5_Regular.ttf */,
+				FD03C0B7F2344AFFA2EB7455 /* FontAwesome5_Solid.ttf */,
+				AD7560F83E214BA89D06E6C5 /* Fontisto.ttf */,
+				3C70B81BEBB641DCB331937C /* Foundation.ttf */,
+				82A90249613D404E896157C6 /* Ionicons.ttf */,
+				3F087F8DEAB84696BA764FA0 /* MaterialCommunityIcons.ttf */,
+				0CA7893CFAB84165A0394ABE /* MaterialIcons.ttf */,
+				59B5326283C24537B4394619 /* Octicons.ttf */,
+				3E85968245EA4BB8B15944D8 /* SimpleLineIcons.ttf */,
+				5740240807E443BA88228EA1 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ciupercarTests */ = {
+		00E356ED1AD99517003FC87E /* mushroomsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ciupercarTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mushroomsTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -173,14 +229,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ciupercarTests;
-			productName = ciupercarTests;
-			productReference = 00E356EE1AD99517003FC87E /* ciupercarTests.xctest */;
+			name = mushroomsTests;
+			productName = mushroomsTests;
+			productReference = 00E356EE1AD99517003FC87E /* mushroomsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ciupercar */ = {
+		13B07F861A680F5B00A75B9A /* mushrooms */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ciupercar" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mushrooms" */;
 			buildPhases = (
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -192,14 +248,14 @@
 			);
 			dependencies = (
 			);
-			name = ciupercar;
-			productName = "ciupercar";
-			productReference = 13B07F961A680F5B00A75B9A /* ciupercar.app */;
+			name = mushrooms;
+			productName = "mushrooms";
+			productReference = 13B07F961A680F5B00A75B9A /* mushrooms.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* ciupercar-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* mushrooms-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ciupercar-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mushrooms-tvOS" */;
 			buildPhases = (
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
@@ -211,14 +267,14 @@
 			);
 			dependencies = (
 			);
-			name = "ciupercar-tvOS";
-			productName = "ciupercar-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* ciupercar-tvOS.app */;
+			name = "mushrooms-tvOS";
+			productName = "mushrooms-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* mushrooms-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* ciupercar-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* mushrooms-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ciupercar-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mushrooms-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -229,9 +285,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "ciupercar-tvOSTests";
-			productName = "ciupercar-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* ciupercar-tvOSTests.xctest */;
+			name = "mushrooms-tvOSTests";
+			productName = "mushrooms-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* mushrooms-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +296,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -258,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ciupercar" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mushrooms" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -271,10 +327,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ciupercar */,
-				00E356ED1AD99517003FC87E /* ciupercarTests */,
-				2D02E47A1E0B4A5D006451C7 /* ciupercar-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* ciupercar-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* mushrooms */,
+				00E356ED1AD99517003FC87E /* mushroomsTests */,
+				2D02E47A1E0B4A5D006451C7 /* mushrooms-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* mushrooms-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -293,6 +349,22 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				62817A15D8D64B4AA90DE460 /* AntDesign.ttf in Resources */,
+				BB170D51CD4E4A2BA033D192 /* Entypo.ttf in Resources */,
+				AA6A2F9009304E88B9DCCBF9 /* EvilIcons.ttf in Resources */,
+				C8FCE0DF9EAF47ECAC12B4F4 /* Feather.ttf in Resources */,
+				9CFBF8825A2B45EC82832BCD /* FontAwesome.ttf in Resources */,
+				20AA65BD19E74D1681E7E0D1 /* FontAwesome5_Brands.ttf in Resources */,
+				99389F50AD6A472E8CA00EF3 /* FontAwesome5_Regular.ttf in Resources */,
+				2E6F126515E54492826FEA7C /* FontAwesome5_Solid.ttf in Resources */,
+				85F109E086D341AE839590D8 /* Fontisto.ttf in Resources */,
+				6261B7FB13C64CB6ACA8A6B2 /* Foundation.ttf in Resources */,
+				8F42604FD67344BF87703F22 /* Ionicons.ttf in Resources */,
+				0A16BC84C91F41EFA45B96D8 /* MaterialCommunityIcons.ttf in Resources */,
+				C93304F1445B474C81867F11 /* MaterialIcons.ttf in Resources */,
+				964CC20657D94761911C40B7 /* Octicons.ttf in Resources */,
+				FB7D1499958C4D5AAAB968B2 /* SimpleLineIcons.ttf in Resources */,
+				A1E94F3DAC274A2C8DD65695 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ciupercarTests.m in Sources */,
+				00E356F31AD99517003FC87E /* mushroomsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* ciupercarTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* mushroomsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +494,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ciupercar */;
+			target = 13B07F861A680F5B00A75B9A /* mushrooms */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* ciupercar-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* mushrooms-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -439,7 +511,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = ciupercar;
+			path = mushrooms;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -453,7 +525,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ciupercarTests/Info.plist;
+				INFOPLIST_FILE = mushroomsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -463,7 +535,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciupercar.app/ciupercar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushrooms.app/mushrooms";
 			};
 			name = Debug;
 		};
@@ -472,7 +544,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ciupercarTests/Info.plist;
+				INFOPLIST_FILE = mushroomsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -482,7 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciupercar.app/ciupercar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushrooms.app/mushrooms";
 			};
 			name = Release;
 		};
@@ -492,7 +564,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = ciupercar/Info.plist;
+				INFOPLIST_FILE = mushrooms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -500,7 +572,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ciupercar;
+				PRODUCT_NAME = mushrooms;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -510,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = ciupercar/Info.plist;
+				INFOPLIST_FILE = mushrooms/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -518,7 +590,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ciupercar;
+				PRODUCT_NAME = mushrooms;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -535,14 +607,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ciupercar-tvOS/Info.plist";
+				INFOPLIST_FILE = "mushrooms-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ciupercar-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mushrooms-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -562,14 +634,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ciupercar-tvOS/Info.plist";
+				INFOPLIST_FILE = "mushrooms-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ciupercar-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mushrooms-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -588,17 +660,17 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ciupercar-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mushrooms-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ciupercar-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mushrooms-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciupercar-tvOS.app/ciupercar-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushrooms-tvOS.app/mushrooms-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -614,17 +686,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "ciupercar-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mushrooms-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.ciupercar-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.mushrooms-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ciupercar-tvOS.app/ciupercar-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mushrooms-tvOS.app/mushrooms-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -731,7 +803,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ciupercarTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mushroomsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -740,7 +812,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ciupercar" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mushrooms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -749,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ciupercar-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mushrooms-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -758,7 +830,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ciupercar-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mushrooms-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -767,7 +839,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ciupercar" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mushrooms" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

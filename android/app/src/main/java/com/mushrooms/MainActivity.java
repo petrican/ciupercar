@@ -1,4 +1,4 @@
-package com.ciupercar;
+package com.mushrooms;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "ciupercar";
+    return "mushrooms";
   }
 }

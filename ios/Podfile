@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'ciupercar' do
-  # Pods for ciupercar
+target 'mushrooms' do
+  # Pods for mushrooms
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -34,7 +34,7 @@ target 'ciupercar' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-  target 'ciupercarTests' do
+  target 'mushroomsTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -42,10 +42,10 @@ target 'ciupercar' do
   use_native_modules!
 end
 
-target 'ciupercar-tvOS' do
-  # Pods for ciupercar-tvOS
+target 'mushrooms-tvOS' do
+  # Pods for mushrooms-tvOS
 
-  target 'ciupercar-tvOSTests' do
+  target 'mushrooms-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

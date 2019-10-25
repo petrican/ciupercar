@@ -1,2 +1,0 @@
-# ciupercar
-Ciupercar Mobile App
