@@ -48,7 +48,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
     navigationOptions: ({ navigation }) => ({
       title: 'Demo Screen 1',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
-      headerRight: 	<Icon name="rocket" size={30} color="#900" />,
+      headerRight: 	<Icon name="magnifying-glass" size={30} color="#900" />,
       headerStyle: {
         backgroundColor: '#FF9800',
       },
