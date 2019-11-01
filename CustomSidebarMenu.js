@@ -8,7 +8,7 @@ export default class CustomSidebarMenu extends Component {
     super();
     //Setting up the Main Top Large Image of the Custom Sidebar
     this.proileImage =
-      'https://aboutreact.com/wp-content/uploads/2018/07/sample_img.png';
+      'https://petrican.github.io/img/avatar.jpg';
     //Array of the sidebar navigation option with icon and screen to navigate
     //This screens can be any screen defined in Drawer Navigator in App.js
     //You can find the Icons from here https://material.io/tools/icons/
