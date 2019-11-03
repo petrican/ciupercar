@@ -13,17 +13,17 @@ export default class CustomSidebarMenu extends Component {
     this.items = [
       {
         navOptionThumb: 'camera',
-        navOptionName: 'First Screen',
+        navOptionName: 'Ciuperci comestibile',
         screenToNavigate: 'NavScreen1',
       },
       {
         navOptionThumb: 'image',
-        navOptionName: 'Second Screen',
+        navOptionName: 'Ciuperci necomestibile',
         screenToNavigate: 'NavScreen2',
       },
       {
         navOptionThumb: 'build',
-        navOptionName: 'Third Screen',
+        navOptionName: 'Retete',
         screenToNavigate: 'NavScreen3',
       },
     ];

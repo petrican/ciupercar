@@ -10,7 +10,7 @@ export default class Screen2 extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Screen 2 </Text>
+        <Text style={{ fontSize: 23 }}> Necomestibile...lista </Text>
       </View>
     );
   }

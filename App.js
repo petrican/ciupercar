@@ -61,7 +61,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
   First: {
     screen: Screen1,
     navigationOptions: ({ navigation }) => ({
-      title: 'Demo Screen 1',
+      title: 'Ciuperci comestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: '#FF9800',
@@ -77,7 +77,7 @@ const Screen2_StackNavigator = createStackNavigator({
   Second: {
     screen: Screen2,
     navigationOptions: ({ navigation }) => ({
-      title: 'Demo Screen 2',
+      title: 'Ciuperci necomestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
  
       headerStyle: {
@@ -94,7 +94,7 @@ const Screen3_StackNavigator = createStackNavigator({
   Third: {
     screen: Screen3,
     navigationOptions: ({ navigation }) => ({
-      title: 'Demo Screen 3',
+      title: 'Retete',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: '#FF9800',
@@ -111,19 +111,19 @@ const DrawerNavigatorExample = createDrawerNavigator(
     NavScreen1: {
       screen: FirstActivity_StackNavigator,
       navigationOptions: {
-        drawerLabel: 'Demo Screen 1',
+        drawerLabel: 'Ciuperci comestibile',
       },
     },
     NavScreen2: {
       screen: Screen2_StackNavigator,
       navigationOptions: {
-        drawerLabel: 'Demo Screen 2',
+        drawerLabel: 'Ciuperci necomestibile',
       },
     },
     NavScreen3: {
       screen: Screen3_StackNavigator,
       navigationOptions: {
-        drawerLabel: 'Demo Screen 3',
+        drawerLabel: 'Retete',
       },
     },
   },

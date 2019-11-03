@@ -9,7 +9,7 @@ export default class Screen3 extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Screen 3 </Text>
+        <Text style={{ fontSize: 23 }}> Retete lista </Text>
       </View>
     );
   }
