@@ -6,9 +6,7 @@ import { Icon } from 'react-native-elements';
 export default class CustomSidebarMenu extends Component {
   constructor() {
     super();
-    //Setting up the Main Top Large Image of the Custom Sidebar
-    this.proileImage =
-      'https://petrican.github.io/img/avatar.jpg';
+
     //Array of the sidebar navigation option with icon and screen to navigate
     //This screens can be any screen defined in Drawer Navigator in App.js
     //You can find the Icons from here https://material.io/tools/icons/
@@ -35,7 +33,7 @@ export default class CustomSidebarMenu extends Component {
       <View style={styles.sideMenuContainer}>
         {/*Top Large Image */}
         <Image
-          source={{ uri: this.proileImage }}
+          source={require('./image/boletus.png')}
           style={styles.sideMenuProfileIcon}
         />
         {/*Divider between Top Image and Sidebar Option*/}
