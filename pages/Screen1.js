@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 //import react in our code.
 import { FlatList, StyleSheet, View, Text } from 'react-native';
 import { openDatabase } from 'react-native-sqlite-storage';
-//Connction to access the pre-populated user_db.db
+// Connection to access the pre-populated ciupercar.db
 var db = openDatabase({ name: 'ciupercar.db', createFromLocation: 1 });
 
 export default class Screen1 extends Component {
@@ -14,7 +14,7 @@ export default class Screen1 extends Component {
       FlatListItems: [],
     };
     db.transaction(tx => {
-      tx.executeSql('SELECT * FROM ciuperci', [], (tx, results) => {
+      tx.executeSql('SELECT * FROM ciuperci categorie=\'1\'', [], (tx, results) => {
         var temp = [];
         for (let i = 0; i < results.rows.length; ++i) {
           temp.push(results.rows.item(i));
@@ -40,7 +40,8 @@ export default class Screen1 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
-            <View key={item.id} style={{ backgroundColor: 'white', padding: 20 }}>
+            <View key={item.id} style={{ backgroundColor: 'green', padding: 20, borderRadius: 4, borderWidth: 0.5, borderColor:  '#d6d7da' }}>
+            <Image source={require(`./image/${item.short}/${item.thumb}.jpg`)} style={{ width: 25, height: 25, marginLeft: 5 }}  />
               <Text>Id: {item.id}</Text>
               <Text>Denumire: {item.denumire}</Text>
             </View>

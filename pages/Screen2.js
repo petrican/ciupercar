@@ -2,15 +2,50 @@
 //This is an example code for NavigationDrawer//
 import React, { Component } from 'react';
 //import react in our code.
-import { StyleSheet, View, Text } from 'react-native';
-// import all basic components
+import { FlatList, StyleSheet, View, Text } from 'react-native';
+import { openDatabase } from 'react-native-sqlite-storage';
+// Connection to access the pre-populated ciupercar.db
+var db = openDatabase({ name: 'ciupercar.db', createFromLocation: 1 });
  
 export default class Screen2 extends Component {
-  //Screen2 Component
+  constructor(props) {
+    super(props);
+    this.state = {
+      FlatListItems: [],
+    };
+    db.transaction(tx => {
+      tx.executeSql('SELECT * FROM ciuperci WHERE categorie=\'2\'', [], (tx, results) => {
+        var temp = [];
+        for (let i = 0; i < results.rows.length; ++i) {
+          temp.push(results.rows.item(i));
+        }
+        this.setState({
+          FlatListItems: temp,
+        });
+      });
+    });
+  }
+  ListViewItemSeparator = () => {
+    return (
+      <View style={{ height: 0.2, width: '100%', backgroundColor: '#808080' }} />
+    );
+  };
+
+  //Screen1 Component
   render() {
     return (
-      <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Necomestibile...lista </Text>
+      <View>
+        <FlatList
+          data={this.state.FlatListItems}
+          ItemSeparatorComponent={this.ListViewItemSeparator}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item }) => (
+            <View key={item.id} style={{ backgroundColor: 'green', padding: 20, borderRadius: 4, borderWidth: 0.5, borderColor:  '#d6d7da' }}>
+              <Text>Id: {item.id}</Text>
+              <Text>Denumire: {item.denumire}</Text>
+            </View>
+          )}
+        />
       </View>
     );
   }
