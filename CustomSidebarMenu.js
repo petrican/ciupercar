@@ -12,17 +12,17 @@ export default class CustomSidebarMenu extends Component {
     //You can find the Icons from here https://material.io/tools/icons/
     this.items = [
       {
-        navOptionThumb: 'camera',
+        navOptionThumb: 'add-circle-outline',
         navOptionName: 'Ciuperci comestibile',
         screenToNavigate: 'NavScreen1',
       },
       {
-        navOptionThumb: 'image',
+        navOptionThumb: 'remove-circle-outline',
         navOptionName: 'Ciuperci necomestibile',
         screenToNavigate: 'NavScreen2',
       },
       {
-        navOptionThumb: 'build',
+        navOptionThumb: 'restaurant',
         navOptionName: 'Retete',
         screenToNavigate: 'NavScreen3',
       },
@@ -93,7 +93,7 @@ export default class CustomSidebarMenu extends Component {
             }}
             key="offkey">
             <View style={{marginRight: 10, marginLeft: 20}}>
-              <Icon name="coffee" size={25} color="#808080" />
+              <Icon name='md-power' type='ionicon' size={25} color="#808080" />
             </View>
             <Text
               style={{

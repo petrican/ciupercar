@@ -43,17 +43,16 @@ export default class Screen1 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
-            <View
-              key={item.id}
-              style={styles.boxCiuperca}>
+            <View key={item.id} style={styles.boxCiuperca}>
               <View>
                 <Image
                   source={require('../image/boletus.png')}
                   style={{width: 50, height: 50, marginLeft: 5}}
                 />
               </View>
-              <Text style={styles.textLabel}>Id: {item.id}</Text>
-              <Text style={styles.textLabel}>Denumire: {item.denumire}</Text>
+              <View style={styles.sectionRight}>
+                <Text style={styles.textLabel}>{item.denumire}</Text>
+              </View>
             </View>
           )}
         />
@@ -67,9 +66,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#769743',
     padding: 20,
     borderWidth: 0.5,
-    borderColor: '#d6d7da'
+    borderColor: '#d6d7da',
+    flexDirection: 'row',
+  },
+  sectionRight: {
+    flexDirection: 'column',
+    marginLeft: 20
   },
   textLabel: {
-    color: '#000000'
-  }
+    marginTop: 15,
+    color: '#000000',
+  },
 });
