@@ -40,7 +40,7 @@ export default class Screen2 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
-            <View key={item.id} style={{ backgroundColor: 'green', padding: 20, borderRadius: 4, borderWidth: 0.5, borderColor:  '#d6d7da' }}>
+            <View key={item.id} style={{ backgroundColor: '#B51300', padding: 20, borderRadius: 4, borderWidth: 0.5, borderColor:  '#d6d7da' }}>
               <Text>Id: {item.id}</Text>
               <Text>Denumire: {item.denumire}</Text>
             </View>

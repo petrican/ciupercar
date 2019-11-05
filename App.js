@@ -64,7 +64,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
       title: 'Ciuperci comestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: '#FF9800',
+        backgroundColor: '#313218',
       },
       headerTintColor: '#fff',
     }),
@@ -81,7 +81,7 @@ const Screen2_StackNavigator = createStackNavigator({
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
  
       headerStyle: {
-        backgroundColor: '#FF9800',
+        backgroundColor: '#313218',
       },
       headerTintColor: '#fff',
     }),
@@ -97,7 +97,7 @@ const Screen3_StackNavigator = createStackNavigator({
       title: 'Retete',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
-        backgroundColor: '#FF9800',
+        backgroundColor: '#313218',
       },
       headerTintColor: '#fff',
     }),

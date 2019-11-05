@@ -1,8 +1,8 @@
 //This is an example code for Navigation Drawer with Custom Side bar//
-import React, { Component } from 'react';
-import { View, StyleSheet, Image, Text } from 'react-native';
-import { Icon } from 'react-native-elements';
- 
+import React, {Component} from 'react';
+import {View, StyleSheet, Image, Text, BackHandler} from 'react-native';
+import {Icon} from 'react-native-elements';
+
 export default class CustomSidebarMenu extends Component {
   constructor() {
     super();
@@ -46,7 +46,7 @@ export default class CustomSidebarMenu extends Component {
           }}
         />
         {/*Setting up Navigation Options from option array using loop*/}
-        <View style={{ width: '100%' }}>
+        <View style={{width: '100%'}}>
           {this.items.map((item, key) => (
             <View
               style={{
@@ -54,16 +54,18 @@ export default class CustomSidebarMenu extends Component {
                 alignItems: 'center',
                 paddingTop: 10,
                 paddingBottom: 10,
-                backgroundColor: global.currentScreenIndex === key ? '#e0dbdb' : '#ffffff',
+                backgroundColor:
+                  global.currentScreenIndex === key ? '#e0dbdb' : '#ffffff',
               }}
               key={key}>
-              <View style={{ marginRight: 10, marginLeft: 20 }}>
+              <View style={{marginRight: 10, marginLeft: 20}}>
                 <Icon name={item.navOptionThumb} size={25} color="#808080" />
               </View>
               <Text
                 style={{
                   fontSize: 15,
-                  color: global.currentScreenIndex === key ? 'red' : 'black',
+                  color:
+                    global.currentScreenIndex === key ? '#313218' : 'black',
                 }}
                 onPress={() => {
                   global.currentScreenIndex = key;
@@ -73,6 +75,35 @@ export default class CustomSidebarMenu extends Component {
               </Text>
             </View>
           ))}
+
+          <View
+            style={{
+              borderBottomColor: '#DDDDDD',
+              borderBottomWidth: 1,
+            }}
+          />
+
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              paddingTop: 10,
+              paddingBottom: 10,
+              backgroundColor: '#ffffff',
+            }}
+            key="offkey">
+            <View style={{marginRight: 10, marginLeft: 20}}>
+              <Icon name="coffee" size={25} color="#808080" />
+            </View>
+            <Text
+              style={{
+                fontSize: 15,
+                color: 'black',
+              }}
+              onPress={()  => BackHandler.exitApp()}>
+              Inchide aplicatia
+            </Text>
+          </View>
         </View>
       </View>
     );
