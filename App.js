@@ -28,6 +28,7 @@ import {createStackNavigator} from 'react-navigation-stack';
 import Screen1 from './pages/Screen1';
 import Screen2 from './pages/Screen2';
 import Screen3 from './pages/Screen3';
+import Screen4 from './pages/Screen4';
  
 //Import Custom Sidebar
 import CustomSidebarMenu from './CustomSidebarMenu';
@@ -103,7 +104,24 @@ const Screen3_StackNavigator = createStackNavigator({
     }),
   },
 });
- 
+
+
+//Stack Navigator for the Third Option of Navigation Drawer
+const Screen4_StackNavigator = createStackNavigator({
+  //All the screen from the Third Option will be indexed here
+  Forth: {
+    screen: Screen4,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Screen4',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#313218',
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
+
 //Drawer Navigator Which will provide the structure of our App
 const DrawerNavigatorExample = createDrawerNavigator(
   {
