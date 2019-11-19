@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 //import react in our code.
 import {FlatList, StyleSheet, View, Text, Button} from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
@@ -44,6 +45,7 @@ export default class Screen2 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
+            <TouchableOpacity key={item.id} onPress={() => navigate('Screen4', {name: item.denumire})} >
             <View
               key={item.id}
               style={{
@@ -60,6 +62,7 @@ export default class Screen2 extends Component {
                 onPress={() => navigate('Screen4', {name: item.denumire})}
               />
             </View>
+            </TouchableOpacity>
           )}
         />
       </View>

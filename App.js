@@ -75,7 +75,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
 //Stack Navigator for the Second Option of Navigation Drawer
 const Screen2_StackNavigator = createStackNavigator({
   //All the screen from the Second Option will be indexed here
-  Second: {
+  Screen2: {
     screen: Screen2,
     navigationOptions: ({ navigation }) => ({
       title: 'Ciuperci necomestibile',
@@ -87,6 +87,17 @@ const Screen2_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
+  Screen4: {
+    screen: Screen4,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Screen4',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#313218',
+      },
+      headerTintColor: '#fff',
+    }),
+  }
 });
  
 //Stack Navigator for the Third Option of Navigation Drawer
@@ -105,22 +116,6 @@ const Screen3_StackNavigator = createStackNavigator({
   },
 });
 
-
-//Stack Navigator for the Third Option of Navigation Drawer
-const Screen4_StackNavigator = createStackNavigator({
-  //All the screen from the Third Option will be indexed here
-  Forth: {
-    screen: Screen4,
-    navigationOptions: ({ navigation }) => ({
-      title: 'Screen4',
-      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
-      headerStyle: {
-        backgroundColor: '#313218',
-      },
-      headerTintColor: '#fff',
-    }),
-  },
-});
 
 //Drawer Navigator Which will provide the structure of our App
 const DrawerNavigatorExample = createDrawerNavigator(
