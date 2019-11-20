@@ -7,7 +7,7 @@ import {openDatabase} from 'react-native-sqlite-storage';
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
-export default class Screen2 extends Component {
+export default class NonEdible extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -35,7 +35,7 @@ export default class Screen2 extends Component {
     );
   };
 
-  //Screen1 Component
+  // Non-edible mushrooms
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -45,7 +45,7 @@ export default class Screen2 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
-            <TouchableOpacity key={item.id} onPress={() => navigate('Screen4', {name: item.denumire})} >
+            <TouchableOpacity key={item.id} onPress={() => navigate('DetailsNonEdible', {name: item.denumire})} >
             <View
               key={item.id}
               style={{

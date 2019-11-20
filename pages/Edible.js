@@ -1,12 +1,12 @@
 //This is an example code for NavigationDrawer//
 import React, {Component} from 'react';
 //import react in our code.
-import {FlatList, StyleSheet, View, Text, Image} from 'react-native';
+import {FlatList, StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
-export default class Screen1 extends Component {
+export default class Edible extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -36,6 +36,7 @@ export default class Screen1 extends Component {
 
   //Screen1 Component
   render() {
+    const { navigate } = this.props.navigation;
     return (
       <View>
         <FlatList
@@ -43,6 +44,7 @@ export default class Screen1 extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
+            <TouchableOpacity key={item.id} onPress={() => navigate('DetailsEdible', {name: item.denumire})} >
             <View key={item.id} style={styles.boxCiuperca}>
               <View>
                 <Image
@@ -54,6 +56,7 @@ export default class Screen1 extends Component {
                 <Text style={styles.textLabel}>{item.denumire}</Text>
               </View>
             </View>
+            </TouchableOpacity>
           )}
         />
       </View>

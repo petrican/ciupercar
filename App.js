@@ -25,11 +25,12 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createStackNavigator} from 'react-navigation-stack';
  
 //Import all the screens
-import Screen1 from './pages/Screen1';
-import Screen2 from './pages/Screen2';
+import Edible from './pages/Edible';
+import NonEdible from './pages/NonEdible';
 import Screen3 from './pages/Screen3';
-import Screen4 from './pages/Screen4';
- 
+import DetailsNonEdible from './pages/DetailsNonEdible';
+import DetailsEdible from './pages/DetailsEdible'; 
+
 //Import Custom Sidebar
 import CustomSidebarMenu from './CustomSidebarMenu';
  
@@ -60,7 +61,7 @@ class NavigationDrawerStructure extends Component {
 const FirstActivity_StackNavigator = createStackNavigator({
   //All the screen from the First Option will be indexed here
   First: {
-    screen: Screen1,
+    screen: Edible,
     navigationOptions: ({ navigation }) => ({
       title: 'Ciuperci comestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
@@ -70,13 +71,24 @@ const FirstActivity_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
+  DetailsEdible: {
+    screen: DetailsEdible,
+    navigationOptions: ({ navigation }) => ({
+      title: navigation.state.params.name,
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#313218',
+      },
+      headerTintColor: '#fff',
+    }),
+  }
 });
  
 //Stack Navigator for the Second Option of Navigation Drawer
 const Screen2_StackNavigator = createStackNavigator({
   //All the screen from the Second Option will be indexed here
-  Screen2: {
-    screen: Screen2,
+  NonEdible: {
+    screen: NonEdible,
     navigationOptions: ({ navigation }) => ({
       title: 'Ciuperci necomestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
@@ -87,10 +99,10 @@ const Screen2_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
-  Screen4: {
-    screen: Screen4,
+  DetailsNonEdible: {
+    screen: DetailsNonEdible,
     navigationOptions: ({ navigation }) => ({
-      title: 'Screen4',
+      title: navigation.state.params.name,
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerStyle: {
         backgroundColor: '#313218',
