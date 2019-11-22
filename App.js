@@ -23,13 +23,15 @@ import {
 import {createAppContainer} from 'react-navigation';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createStackNavigator} from 'react-navigation-stack';
- 
+
 //Import all the screens
 import Edible from './pages/Edible';
 import NonEdible from './pages/NonEdible';
 import Screen3 from './pages/Screen3';
 import DetailsNonEdible from './pages/DetailsNonEdible';
 import DetailsEdible from './pages/DetailsEdible'; 
+import Search from './pages/Search';
+
 
 //Import Custom Sidebar
 import CustomSidebarMenu from './CustomSidebarMenu';
@@ -65,6 +67,7 @@ const FirstActivity_StackNavigator = createStackNavigator({
     navigationOptions: ({ navigation }) => ({
       title: 'Ciuperci comestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerRight: <Search />,
       headerStyle: {
         backgroundColor: '#313218',
       },
