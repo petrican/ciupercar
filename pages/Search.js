@@ -12,7 +12,7 @@ export default class Search extends Component {
   }
 
   toggleSearchBar = () => {
-    this.setState({ searchActive: !this.state.searchActive });
+    this.setState({ searchActive: !this.state.searchActive, text: '' });
   };
 
   render() {
