@@ -44,11 +44,11 @@ export default class Edible extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
-            <TouchableOpacity key={item.id} onPress={() => navigate('DetailsEdible', {name: item.denumire})} >
+            <TouchableOpacity key={item.id} onPress={() => navigate('DetailsEdible', {name: item.denumire, images: item.images})} >
             <View key={item.id} style={styles.boxCiuperca}>
               <View>
                 <Image
-                  source={require('../image/boletus.png')}
+                  source={require('../image/agaricus_bisporus_thumb.jpg')}
                   style={{width: 50, height: 50, marginLeft: 5}}
                 />
               </View>

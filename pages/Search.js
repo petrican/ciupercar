@@ -17,7 +17,7 @@ export default class Search extends Component {
 
   render() {
     const SearchBar = (
-      <View style={{width: 250, height: 50, backgroundColor: '#313218'}}>
+      <View style={{width: 280, height: 50, backgroundColor: '#313218'}}>
         <TextInput
           style={{paddingTop: 18, color: 'white', fontSize: 20}}
           placeholder="Caută ..."

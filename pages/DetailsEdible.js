@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 //import react in our code.
 import {StyleSheet, View, Button, Text} from 'react-native';
 import SliderShow from 'react-native-image-slider-show';
+import Imap from '../image/Imap';
 
 export default class DetailsEdible extends Component {
   constructor(props) {
@@ -24,16 +25,22 @@ export default class DetailsEdible extends Component {
   render() {
     const {goBack} = this.props.navigation;
     const { images } = this.props.navigation.state.params;
+    console.log('NAV =>', this.props.navigation.state);
     console.log(images);
+    const imagesData = (images !== null) ? images.split(',') : [];
+
+    console.log('IMAP=>', Imap);
+    const imagesSource = imagesData.map((item) =>{
+      console.log('item =>', item);
+      console.log('ITEM =>', Imap[item]);
+      return { url: Imap[item]};
+    })
+    console.log('IS =>', imagesSource);
     return (
       <View style={styles.MainContainer}>
         <View style={{backgroundColor: 'blue', height: 200}}>
           <SliderShow
-            dataSource={[
-              {url: require('../image/boletus.png')},
-              {url: require('../image/boletus.png')},
-              {url: require('../image/boletus.png')},
-            ]}
+            dataSource={imagesSource}
           />
         </View>
         <View>
