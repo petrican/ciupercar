@@ -8,14 +8,6 @@ import Imap from '../image/Imap';
 export default class DetailsEdible extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      images: [
-        require('../image/boletus.png'),
-        require('../image/boletus.png'),
-        require('../image/boletus.png'),
-        require('../image/boletus.png'),
-      ],
-    };
   }
 
   static navigationOptions = ({navigation}) => ({
@@ -25,16 +17,14 @@ export default class DetailsEdible extends Component {
   render() {
     const {goBack} = this.props.navigation;
     const { images } = this.props.navigation.state.params;
-    console.log('NAV =>', this.props.navigation.state);
-    console.log(images);
     const imagesData = (images !== null) ? images.split(',') : [];
 
-    console.log('IMAP=>', Imap);
-    const imagesSource = imagesData.map((item) =>{
-      console.log('item =>', item);
-      console.log('ITEM =>', Imap[item]);
+    console.log('PARAMS=>', this.props.navigation.state.params);
+    const imagesSource = Object.keys(Imap).map((item) => {
+      console.log('ITEm =>', item);
+      console.log(imagesData);
       return { url: Imap[item]};
-    })
+    });
     console.log('IS =>', imagesSource);
     return (
       <View style={styles.MainContainer}>

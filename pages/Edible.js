@@ -36,6 +36,7 @@ export default class Edible extends Component {
 
   //Screen1 Component
   render() {
+    console.log('FLATLIST ITEMS : ', this.state.FlatListItems);
     const { navigate } = this.props.navigation;
     return (
       <View>
