@@ -21,9 +21,7 @@ export default class DetailsEdible extends Component {
 
     console.log('PARAMS=>', this.props.navigation.state.params);
     const imagesSource = Object.keys(Imap).map((item) => {
-      console.log('ITEm =>', item);
-      console.log(imagesData);
-      return { url: Imap[item]};
+      if(imagesData.includes(item)) return { url: Imap[item]};
     });
     console.log('IS =>', imagesSource);
     return (
