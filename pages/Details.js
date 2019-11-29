@@ -5,7 +5,7 @@ import {StyleSheet, View, Button, Text} from 'react-native';
 import SliderShow from 'react-native-image-slider-show';
 import Imap from '../image/Imap';
 
-export default class DetailsEdible extends Component {
+export default class Details extends Component {
   constructor(props) {
     super(props);
   }
@@ -19,7 +19,6 @@ export default class DetailsEdible extends Component {
     const { images } = this.props.navigation.state.params;
     const imagesData = (images !== null) ? images.split(',') : [];
 
-    console.log('PARAMS=>', this.props.navigation.state.params);
     const renderImages = [];
     Object.keys(Imap).map((item) => {
       if(imagesData.includes(item)) renderImages.push({ url: Imap[item]});

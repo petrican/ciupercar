@@ -7,9 +7,11 @@ import {
   Dimensions,
   Image,
   TouchableOpacity,
+  Button,
   Platform,
   Text,
 } from 'react-native';
+
 // import all basic components
  
 //For React Navigation 3+
@@ -28,10 +30,9 @@ import {createStackNavigator} from 'react-navigation-stack';
 import Edible from './pages/Edible';
 import NonEdible from './pages/NonEdible';
 import Screen3 from './pages/Screen3';
-import DetailsNonEdible from './pages/DetailsNonEdible';
-import DetailsEdible from './pages/DetailsEdible'; 
+import Details from './pages/Details'; 
 import Search from './pages/Search';
-
+import BackButton from './components/BackButton';
 
 //Import Custom Sidebar
 import CustomSidebarMenu from './CustomSidebarMenu';
@@ -74,11 +75,12 @@ const FirstActivity_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
-  DetailsEdible: {
-    screen: DetailsEdible,
+  Details: {
+    screen: Details,
     navigationOptions: ({ navigation }) => ({
       title: navigation.state.params.name,
-      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      // headerRight: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerLeft: () => <BackButton icon="arrow-back" size={30} color="white" navigation={navigation} />,
       headerStyle: {
         backgroundColor: '#313218',
       },
@@ -102,11 +104,12 @@ const Screen2_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
-  DetailsNonEdible: {
-    screen: DetailsNonEdible,
+  Details: {
+    screen: Details,
     navigationOptions: ({ navigation }) => ({
       title: navigation.state.params.name,
-      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerRight: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerLeft: () => <BackButton icon="arrow-back" size={30} color="white" navigation={navigation} />,
       headerStyle: {
         backgroundColor: '#313218',
       },

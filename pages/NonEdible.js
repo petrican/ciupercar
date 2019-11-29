@@ -1,8 +1,9 @@
 //This is an example code for NavigationDrawer//
 import React, {Component} from 'react';
 //import react in our code.
-import {FlatList, StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import {FlatList, StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
+import Imap from '../image/Imap';
 
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
@@ -45,18 +46,17 @@ export default class NonEdible extends Component {
           ItemSeparatorComponent={this.ListViewItemSeparator}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({item}) => (
-            <TouchableOpacity key={item.id} onPress={() => navigate('DetailsNonEdible', {name: item.denumire})} >
-            <View
-              key={item.id}
-              style={{
-                backgroundColor: '#B51300',
-                padding: 20,
-                borderRadius: 4,
-                borderWidth: 0.5,
-                borderColor: '#d6d7da',
-              }}>
-              <Text>Id: {item.id}</Text>
-              <Text>Denumire: {item.denumire}</Text>
+            <TouchableOpacity key={item.id} onPress={() => navigate('Details', {name: item.denumire, images: item.images})} >
+            <View key={item.id} style={styles.boxCiuperca}>
+              <View>
+                <Image
+                  source={Imap[item.thumb]}
+                  style={{width: 50, height: 50, marginLeft: 5}}
+                />
+              </View>
+              <View style={styles.sectionRight}>
+                <Text style={styles.textLabel}>{item.denumire}</Text>
+              </View>
             </View>
             </TouchableOpacity>
           )}
@@ -67,11 +67,19 @@ export default class NonEdible extends Component {
 }
 
 const styles = StyleSheet.create({
-  MainContainer: {
-    flex: 1,
-    paddingTop: 20,
-    alignItems: 'center',
-    marginTop: 50,
-    justifyContent: 'center',
+  boxCiuperca: {
+    backgroundColor: '#E61A23',
+    padding: 20,
+    borderWidth: 0.5,
+    borderColor: '#E61A23',
+    flexDirection: 'row',
+  },
+  sectionRight: {
+    flexDirection: 'column',
+    marginLeft: 20
+  },
+  textLabel: {
+    marginTop: 15,
+    color: '#000000',
   },
 });
