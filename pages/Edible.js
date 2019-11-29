@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 //import react in our code.
 import {FlatList, StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
+import Imap from '../image/Imap';
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
@@ -48,7 +49,7 @@ export default class Edible extends Component {
             <View key={item.id} style={styles.boxCiuperca}>
               <View>
                 <Image
-                  source={require('../image/agaricus_bisporus_thumb.jpg')}
+                  source={Imap[item.thumb]}
                   style={{width: 50, height: 50, marginLeft: 5}}
                 />
               </View>
