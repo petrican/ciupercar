@@ -20,15 +20,16 @@ export default class DetailsEdible extends Component {
     const imagesData = (images !== null) ? images.split(',') : [];
 
     console.log('PARAMS=>', this.props.navigation.state.params);
-    const imagesSource = Object.keys(Imap).map((item) => {
-      if(imagesData.includes(item)) return { url: Imap[item]};
+    const renderImages = [];
+    Object.keys(Imap).map((item) => {
+      if(imagesData.includes(item)) renderImages.push({ url: Imap[item]});
     });
-    console.log('IS =>', imagesSource);
+
     return (
       <View style={styles.MainContainer}>
         <View style={{backgroundColor: 'blue', height: 200}}>
           <SliderShow
-            dataSource={imagesSource}
+            dataSource={renderImages}
           />
         </View>
         <View>
