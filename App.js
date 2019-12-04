@@ -29,7 +29,8 @@ import {createStackNavigator} from 'react-navigation-stack';
 //Import all the screens
 import Edible from './pages/Edible';
 import NonEdible from './pages/NonEdible';
-import Screen3 from './pages/Screen3';
+import Deadly from './pages/Deadly';
+import Retete from './pages/Retete';
 import Details from './pages/Details'; 
 import Search from './pages/Search';
 import BackButton from './components/BackButton';
@@ -117,12 +118,28 @@ const Screen2_StackNavigator = createStackNavigator({
     }),
   }
 });
- 
+
+// 
+const Deadly_StackNavigator = createStackNavigator({
+  Deadly: {
+    screen: Deadly,
+    navigationOptions: ({ navigation }) => ({
+      title: 'Otravitoare',
+      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerStyle: {
+        backgroundColor: '#313218',
+      },
+      headerTintColor: '#fff',
+    }),
+  },
+});
+
+
 //Stack Navigator for the Third Option of Navigation Drawer
-const Screen3_StackNavigator = createStackNavigator({
+const Retete_StackNavigator = createStackNavigator({
   //All the screen from the Third Option will be indexed here
-  Third: {
-    screen: Screen3,
+  Retete: {
+    screen: Retete,
     navigationOptions: ({ navigation }) => ({
       title: 'Retete',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
@@ -152,7 +169,13 @@ const DrawerNavigatorExample = createDrawerNavigator(
       },
     },
     NavScreen3: {
-      screen: Screen3_StackNavigator,
+      screen: Deadly_StackNavigator,
+      navigationOptions: {
+        drawerLabel: 'Deadly',
+      },
+    },
+    NavScreen4: {
+      screen: Retete_StackNavigator,
       navigationOptions: {
         drawerLabel: 'Retete',
       },

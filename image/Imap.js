@@ -10,6 +10,9 @@ const Imap = {
 
     agaricus_arvensis_thumb: require('./agaricus_arvensis_thumb.jpg'),
 
+    // Necomestibile
+    agrocybe_semiorbicularis_thumb: require('./agrocybe_semiorbicularis_thumb.jpg'),
+
 
     // Toxice si mortale
     amanita_phalloides_thumb: require('./amanita_phalloides_thumb.jpg'),

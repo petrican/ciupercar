@@ -16,7 +16,7 @@ export default class NonEdible extends Component {
     };
     db.transaction(tx => {
       tx.executeSql(
-        "SELECT * FROM ciuperci WHERE categorie='2'",
+        "SELECT * FROM ciuperci WHERE categorie='3'",
         [],
         (tx, results) => {
           var temp = [];
@@ -68,10 +68,10 @@ export default class NonEdible extends Component {
 
 const styles = StyleSheet.create({
   boxCiuperca: {
-    backgroundColor: '#ECF71E',
+    backgroundColor: '#E61A23',
     padding: 20,
     borderWidth: 0.5,
-    borderColor: '#ECF71E',
+    borderColor: '#E61A23',
     flexDirection: 'row',
   },
   sectionRight: {

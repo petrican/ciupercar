@@ -23,8 +23,13 @@ export default class CustomSidebarMenu extends Component {
       },
       {
         navOptionThumb: 'restaurant',
-        navOptionName: 'Retete',
+        navOptionName: 'Otravitoare',
         screenToNavigate: 'NavScreen3',
+      },
+      {
+        navOptionThumb: 'restaurant',
+        navOptionName: 'Retete',
+        screenToNavigate: 'NavScreen4',
       },
     ];
   }
