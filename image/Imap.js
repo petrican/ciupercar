@@ -12,7 +12,8 @@ const Imap = {
 
     // Necomestibile
     agrocybe_semiorbicularis_thumb: require('./agrocybe_semiorbicularis_thumb.jpg'),
-
+    agrocybe_semiorbicularis_1: require('./agrocybe_semiorbicularis_1.jpg'),
+    agrocybe_semiorbicularis_2: require('./agrocybe_semiorbicularis_2.jpg'),
 
     // Toxice si mortale
     amanita_phalloides_thumb: require('./amanita_phalloides_thumb.jpg'),
