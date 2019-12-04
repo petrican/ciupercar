@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, TextInput, TouchableOpacity} from 'react-native';
+import {StyleSheet, View, TextInput, TouchableOpacity, Dimensions} from 'react-native';
 import {Icon} from 'react-native-elements';
 
 export default class Search extends Component {
@@ -16,8 +16,11 @@ export default class Search extends Component {
   };
 
   render() {
+    const screenWidth = Dimensions.get('window').width;
+    const searchWidth = screenWidth - 100;
+
     const SearchBar = (
-      <View style={{width: 290, height: 50, backgroundColor: '#313218'}}>
+      <View style={{width: searchWidth, height: 50, backgroundColor: '#313218'}}>
         <TextInput
           style={{paddingTop: 18, color: 'white', fontSize: 20}}
           placeholder="Caută ..."
