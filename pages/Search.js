@@ -1,5 +1,12 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, TextInput, TouchableOpacity, Dimensions} from 'react-native';
+import {
+  StyleSheet,
+  View,
+  TextInput,
+  TouchableOpacity,
+  Dimensions,
+  BackHandler,
+} from 'react-native';
 import {Icon} from 'react-native-elements';
 
 export default class Search extends Component {
@@ -11,16 +18,33 @@ export default class Search extends Component {
     };
   }
 
+  componentDidMount() {
+    this.backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      this.handleBackPress,
+    );
+  }
+
   toggleSearchBar = () => {
-    this.setState({ searchActive: !this.state.searchActive, text: '' });
+    this.setState({searchActive: !this.state.searchActive, text: ''});
   };
+
+  handleBackPress = () => {
+    if (this.state.searchActive) this.toggleSearchBar();
+    return true;
+  };
+
+  componentWillUnmount() {
+    this.backHandler.remove();
+  }
 
   render() {
     const screenWidth = Dimensions.get('window').width;
     const searchWidth = screenWidth - 100;
 
     const SearchBar = (
-      <View style={{width: searchWidth, height: 50, backgroundColor: '#313218'}}>
+      <View
+        style={{width: searchWidth, height: 50, backgroundColor: '#313218'}}>
         <TextInput
           style={{paddingTop: 18, color: 'white', fontSize: 20}}
           placeholder="Caută ..."
