@@ -22,7 +22,7 @@ export default class CustomSidebarMenu extends Component {
         screenToNavigate: 'NavScreen2',
       },
       {
-        navOptionThumb: 'restaurant',
+        navOptionThumb: 'remove-circle',
         navOptionName: 'Otravitoare',
         screenToNavigate: 'NavScreen3',
       },
