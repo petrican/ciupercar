@@ -7,9 +7,11 @@ import {
   Dimensions,
   BackHandler,
 } from 'react-native';
+import {connect} from 'react-redux';
 import {Icon} from 'react-native-elements';
+import { setSearchString } from "../actions/search";
 
-export default class Search extends Component {
+export class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,15 +29,23 @@ export default class Search extends Component {
 
   toggleSearchBar = () => {
     this.setState({searchActive: !this.state.searchActive, text: ''});
+    this.updateSearchInput('');
   };
 
   handleBackPress = () => {
-    if (this.state.searchActive) this.toggleSearchBar();
+    if (this.state.searchActive) {
+      this.toggleSearchBar();
+    }  
     return true;
   };
 
   componentWillUnmount() {
     this.backHandler.remove();
+  }
+
+  updateSearchInput = (text) => {
+    this.props.setSearchString(text);
+    this.setState({text})
   }
 
   render() {
@@ -49,7 +59,7 @@ export default class Search extends Component {
           style={{paddingTop: 18, color: 'white', fontSize: 20}}
           placeholder="Caută ..."
           placeholderTextColor={'white'}
-          onChangeText={text => this.setState({text})}
+          onChangeText={text => this.updateSearchInput(text)}
           value={this.state.text}
         />
       </View>
@@ -89,3 +99,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+const mapStateToProps = state => ({
+  search: state.search
+});
+
+const mapDispatchToProps = dispatch => {
+  return {
+    // dispatching actions returned by action creators
+    setSearchString: (search) => dispatch(setSearchString(search)),
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Search);

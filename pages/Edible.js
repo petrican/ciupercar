@@ -4,10 +4,12 @@ import React, {Component} from 'react';
 import {FlatList, StyleSheet, View, Text, Image, TouchableOpacity} from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
 import Imap from '../image/Imap';
+import { connect } from "react-redux";
+
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
-export default class Edible extends Component {
+export class Edible extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,6 +39,9 @@ export default class Edible extends Component {
 
   //Screen1 Component
   render() {
+    // console.log(store.getState());
+    console.log('Props =>', this.props);
+
     const { navigate } = this.props.navigation;
     return (
       <View>
@@ -82,3 +87,13 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
 });
+
+
+const mapStateToProps = state => ({
+  search: state.search
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Edible);
