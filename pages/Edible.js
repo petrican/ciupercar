@@ -15,9 +15,14 @@ export class Edible extends Component {
     this.state = {
       FlatListItems: [],
     };
+    this.dbLookup('');
+  }
+
+  dbLookup = (srcString) => {
+    console.log('Caut => ', srcString);
     db.transaction(tx => {
       tx.executeSql(
-        "SELECT * FROM ciuperci WHERE categorie='1'",
+        "SELECT * FROM ciuperci WHERE categorie='1' AND denumire like '%"+srcString+"%'",
         [],
         (tx, results) => {
           var temp = [];
@@ -31,6 +36,13 @@ export class Edible extends Component {
       );
     });
   }
+
+  componentWillReceiveProps(nextProps){
+    if(nextProps.search!==this.props.search){
+      this.dbLookup(nextProps.search.lookup);
+    }
+  }
+
   ListViewItemSeparator = () => {
     return (
       <View style={{height: 0.2, width: '100%', backgroundColor: '#808080'}} />
