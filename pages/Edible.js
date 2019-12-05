@@ -19,7 +19,6 @@ export class Edible extends Component {
   }
 
   dbLookup = (srcString) => {
-    console.log('Caut => ', srcString);
     db.transaction(tx => {
       tx.executeSql(
         "SELECT * FROM ciuperci WHERE categorie='1' AND denumire like '%"+srcString+"%'",

@@ -98,7 +98,7 @@ const Screen2_StackNavigator = createStackNavigator({
     navigationOptions: ({navigation}) => ({
       title: 'Ciuperci necomestibile',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
-
+      headerRight: <Search />,
       headerStyle: {
         backgroundColor: '#313218',
       },
@@ -133,6 +133,7 @@ const Deadly_StackNavigator = createStackNavigator({
     navigationOptions: ({navigation}) => ({
       title: 'Otravitoare',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerRight: <Search />,
       headerStyle: {
         backgroundColor: '#313218',
       },

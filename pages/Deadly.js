@@ -4,19 +4,24 @@ import React, {Component} from 'react';
 import {FlatList, StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import {openDatabase} from 'react-native-sqlite-storage';
 import Imap from '../image/Imap';
+import { connect } from "react-redux";
 
 // Connection to access the pre-populated ciupercar.db
 var db = openDatabase({name: 'ciupercar.db', createFromLocation: 1});
 
-export default class NonEdible extends Component {
+export class Deadly extends Component {
   constructor(props) {
     super(props);
     this.state = {
       FlatListItems: [],
     };
+    this.dbLookup('');
+  }
+
+  dbLookup = (srcString) => {
     db.transaction(tx => {
       tx.executeSql(
-        "SELECT * FROM ciuperci WHERE categorie='3'",
+        "SELECT * FROM ciuperci WHERE categorie='3' AND denumire like '%"+srcString+"%'",
         [],
         (tx, results) => {
           var temp = [];
@@ -30,13 +35,14 @@ export default class NonEdible extends Component {
       );
     });
   }
+
   ListViewItemSeparator = () => {
     return (
       <View style={{height: 0.2, width: '100%', backgroundColor: '#808080'}} />
     );
   };
 
-  // Non-edible mushrooms
+  // Deadly mushrooms
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -83,3 +89,12 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
 });
+
+const mapStateToProps = state => ({
+  search: state.search
+});
+
+export default connect(
+  mapStateToProps,
+  null
+)(Deadly);
