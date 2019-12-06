@@ -16,12 +16,13 @@ import {createDrawerNavigator} from 'react-navigation-drawer';
 import {createStackNavigator} from 'react-navigation-stack';
 
 //Import all the screens
-import Edible from './pages/Edible';
-import NonEdible from './pages/NonEdible';
-import Deadly from './pages/Deadly';
+// import Edible from './pages/Edible';
+// import NonEdible from './pages/NonEdible';
+// import Deadly from './pages/Deadly';
 import Retete from './pages/Retete';
 import Details from './pages/Details';
 import Search from './pages/Search';
+import MushroomItem from './pages/MushroomItem';
 import BackButton from './components/BackButton';
 import {Provider, connect} from 'react-redux';
 import store from './store/store';
@@ -53,6 +54,11 @@ class NavigationDrawerStructure extends Component {
 }
 
 // let EdibleContainer = connect(state => ({ search: state.search }), null)(Edible);
+let Edible = (props) => { return (<MushroomItem cat='1' backgroundColor='#769743' {...props} />) }
+let NonEdible = (props) => { return (<MushroomItem cat='2' backgroundColor='#ECF71E' {...props} />) }
+let Deadly = (props) => { return (<MushroomItem cat='3' backgroundColor='#E61A23' {...props} />) }
+
+
 
 //Stack Navigator for the First Option of Navigation Drawer
 const FirstActivity_StackNavigator = createStackNavigator({
