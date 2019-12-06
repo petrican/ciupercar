@@ -78,7 +78,13 @@ export class MushroomItem extends Component {
             <TouchableOpacity
               key={item.id}
               onPress={() =>
-                navigate('Details', {name: item.denumire, images: item.images})
+                navigate('Details', {
+                  name: item.denumire, 
+                  images: item.images,
+                  sezon: item.sezon,
+                  descriere: item.descriere,
+                  popular: item.popular
+                })
               }>
               <View key={item.id} style={boxCiuperca}>
                 <View>

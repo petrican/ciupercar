@@ -23,7 +23,7 @@ export default class Details extends Component {
     Object.keys(Imap).map((item) => {
       if(imagesData.includes(item)) renderImages.push({ url: Imap[item]});
     });
-
+    
     return (
       <View style={styles.MainContainer}>
         <View style={{backgroundColor: 'blue', height: 200}}>
@@ -31,8 +31,16 @@ export default class Details extends Component {
             dataSource={renderImages}
           />
         </View>
+        {/* <View>
+          <Text style={{ padding: 10, fontSize: 18 }}>{this.props.navigation.state.params.name}</Text>
+        </View> */}
         <View>
-          <Text>{this.props.navigation.state.params.name}</Text>
+          <Text style={{ padding: 10, fontSize: 16, color: 'green' }}>{this.props.navigation.state.params.sezon}</Text>
+        </View>
+        <View>
+          <Text style={{ paddingTop: 0, paddingRight: 20, paddingLeft: 20, fontSize: 14}}>{this.props.navigation.state.params.descriere}</Text>
+        </View>
+        <View>
           <Button title="Go back" onPress={() => goBack()} />
         </View>
       </View>
