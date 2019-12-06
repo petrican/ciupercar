@@ -1,6 +1,4 @@
-//This is an example code for NavigationDrawer//
 import React, {Component} from 'react';
-//import react in our code.
 import {
   FlatList,
   StyleSheet,
@@ -61,9 +59,6 @@ export class MushroomItem extends Component {
 
   //Screen1 Component
   render() {
-    // console.log(store.getState());
-    console.log('Props =>', this.props);
-
     const boxCiuperca = {
       backgroundColor: this.props.backgroundColor,
       padding: 20,
@@ -105,13 +100,6 @@ export class MushroomItem extends Component {
 }
 
 const styles = StyleSheet.create({
-  boxCiuperca: {
-    backgroundColor: '#769743',
-    padding: 20,
-    borderWidth: 0.5,
-    borderColor: '#d6d7da',
-    flexDirection: 'row',
-  },
   sectionRight: {
     flexDirection: 'column',
     marginLeft: 20,
