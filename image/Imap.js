@@ -28,6 +28,16 @@ const Imap = {
     boletus_edulis_2: require('./boletus_edulis_2.jpg'),
     boletus_edulis_3: require('./boletus_edulis_3.jpg'),
     boletus_edulis_4: require('./boletus_edulis_4.jpg'),
+    boletus_edulis_5: require('./boletus_edulis_5.jpg'),
+    boletus_pinicola_thumb: require('./boletus_pinicola_thumb.jpg'),
+    boletus_pinicola_1: require('./boletus_pinicola_1.jpg'),
+    boletus_pinicola_2: require('./boletus_pinicola_2.jpg'),
+    boletus_pinicola_3: require('./boletus_pinicola_3.jpg'),
+    boletus_pinicola_4: require('./boletus_pinicola_4.jpg'),
+    boletus_reticulatus_thumb: require('./boletus_reticulatus_thumb.jpg'),
+    boletus_reticulatus_1: require('./boletus_reticulatus_1.jpg'),
+    boletus_reticulatus_2: require('./boletus_reticulatus_2.jpg'),
+    boletus_reticulatus_3: require('./boletus_reticulatus_3.jpg'),
 
     // Necomestibile
     agrocybe_semiorbicularis_thumb: require('./agrocybe_semiorbicularis_thumb.jpg'),
