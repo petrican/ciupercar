@@ -73,6 +73,12 @@ const Imap = {
     morchella_conica_1: require('./morchella_conica_1.jpg'),
     morchella_conica_2: require('./morchella_conica_2.jpg'),
     morchella_conica_2: require('./morchella_conica_2.jpg'),
+    morchella_crassipes_thumb: require('./morchella_crassipes_thumb.jpg'),
+    morchella_crassipes_1: require('./morchella_crassipes_1.jpg'),
+    morchella_crassipes_2: require('./morchella_crassipes_2.jpg'),
+    morchella_rotunda_thumb: require('./morchella_rotunda_thumb.jpg'),
+    morchella_rotunda_1: require('./morchella_rotunda_1.jpg'),
+    morchella_rotunda_2: require('./morchella_rotunda_2.jpg'),
 
     // Necomestibile
     agrocybe_semiorbicularis_thumb: require('./agrocybe_semiorbicularis_thumb.jpg'),
