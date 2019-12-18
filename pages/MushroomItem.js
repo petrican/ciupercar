@@ -53,7 +53,7 @@ export class MushroomItem extends Component {
 
   ListViewItemSeparator = () => {
     return (
-      <View style={{height: 0.2, width: '100%', backgroundColor: 'white'}} />
+      <View style={{height: 0.4, width: '100%', backgroundColor: 'white'}} />
     );
   };
 
@@ -62,7 +62,7 @@ export class MushroomItem extends Component {
     const boxCiuperca = {
       backgroundColor: this.props.backgroundColor,
       padding: 20,
-      borderWidth: 0.5,
+      borderWidth: 0,
       borderColor: this.props.backgroundColor,
       flexDirection: 'row',
     }

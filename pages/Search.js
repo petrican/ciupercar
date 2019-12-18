@@ -95,7 +95,7 @@ const styles = StyleSheet.create({
   MainContainer: {
     flex: 1,
     paddingRight: 15,
-    marginTop: 0,
+    marginTop: 5,
     justifyContent: 'center',
   },
 });

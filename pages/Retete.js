@@ -5,7 +5,7 @@ export default class Retete extends Component {
   render() {
     return (
       <View style={styles.MainContainer}>
-        <Text style={{ fontSize: 23 }}> Retete lista </Text>
+        <Text style={{ fontSize: 23 }}> Disponibil in versiunea urmatoare </Text>
       </View>
     );
   }
