@@ -146,16 +146,19 @@ const Deadly_StackNavigator = createStackNavigator({
       headerTintColor: '#fff',
     }),
   },
-});
-
-//Stack Navigator for the Third Option of Navigation Drawer
-const Retete_StackNavigator = createStackNavigator({
-  //All the screen from the Third Option will be indexed here
-  Retete: {
-    screen: Retete,
+  Details: {
+    screen: Details,
     navigationOptions: ({navigation}) => ({
-      title: 'Retete',
-      headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+      title: navigation.state.params.name,
+      headerRight: <NavigationDrawerStructure navigationProps={navigation} />,
+      headerLeft: () => (
+        <BackButton
+          icon="arrow-back"
+          size={30}
+          color="white"
+          navigation={navigation}
+        />
+      ),
       headerStyle: {
         backgroundColor: '#313218',
       },
@@ -163,6 +166,22 @@ const Retete_StackNavigator = createStackNavigator({
     }),
   },
 });
+
+//Stack Navigator for the Third Option of Navigation Drawer
+// const Retete_StackNavigator = createStackNavigator({
+//   //All the screen from the Third Option will be indexed here
+//   Retete: {
+//     screen: Retete,
+//     navigationOptions: ({navigation}) => ({
+//       title: 'Retete',
+//       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+//       headerStyle: {
+//         backgroundColor: '#313218',
+//       },
+//       headerTintColor: '#fff',
+//     }),
+//   },
+// });
 
 //Drawer Navigator Which will provide the structure of our App
 const DrawerNavigatorExample = createDrawerNavigator(
@@ -186,12 +205,12 @@ const DrawerNavigatorExample = createDrawerNavigator(
         drawerLabel: 'Deadly',
       },
     },
-    NavScreen4: {
-      screen: Retete_StackNavigator,
-      navigationOptions: {
-        drawerLabel: 'Retete',
-      },
-    },
+    // NavScreen4: {
+    //   screen: Retete_StackNavigator,
+    //   navigationOptions: {
+    //     drawerLabel: 'Retete',
+    //   },
+    // },
   },
   {
     //For the Custom sidebar menu we have to provide our CustomSidebarMenu

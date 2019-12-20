@@ -150,12 +150,19 @@ const Imap = {
     cortinarius_traganus_thumb: require('./cortinarius_traganus_thumb.jpg'),
     cortinarius_traganus_1: require('./cortinarius_traganus_1.jpg'),
     cortinarius_traganus_2: require('./cortinarius_traganus_2.jpg'), 
-
-
-
-
-
-
+    coprinus_disseminatus_thumb: require('./coprinus_disseminatus_thumb.jpg'),
+    coprinus_disseminatus_1: require('./coprinus_disseminatus_1.jpg'),
+    coprinus_disseminatus_2: require('./coprinus_disseminatus_2.jpg'), 
+    coprinus_picaceus_thumb: require('./coprinus_picaceus_thumb.jpg'),
+    coprinus_picaceus_1: require('./coprinus_picaceus_1.jpg'),
+    coprinus_picaceus_2: require('./coprinus_picaceus_2.jpg'), 
+    coprinus_picaceus_3: require('./coprinus_picaceus_3.jpg'), 
+    clavariadelphus_pistillaris_thumb: require('./clavariadelphus_pistillaris_thumb.jpg'),
+    clavariadelphus_pistillaris_1: require('./clavariadelphus_pistillaris_1.jpg'),
+    clavariadelphus_pistillaris_2: require('./clavariadelphus_pistillaris_2.jpg'), 
+    clavulina_amethystina_thumb: require('./clavulina_amethystina_thumb.jpg'),
+    clavulina_amethystina_1: require('./clavulina_amethystina_1.jpg'),
+    clavulina_amethystina_2: require('./clavulina_amethystina_2.jpg'), 
 
     // Toxice si mortale
     amanita_phalloides_thumb: require('./amanita_phalloides_thumb.jpg'),
@@ -163,7 +170,34 @@ const Imap = {
     amanita_phalloides_2: require('./amanita_phalloides_2.jpg'),
     amanita_phalloides_3: require('./amanita_phalloides_3.jpg'),
     amanita_phalloides_4: require('./amanita_phalloides_4.jpg'),
-    amanita_phalloides_thumb: require('./amanita_phalloides_thumb.jpg'),
+    amanita_bisporigera_thumb: require('./amanita_bisporigera_thumb.jpg'),
+    amanita_bisporigera_1: require('./amanita_bisporigera_1.jpg'),
+    amanita_bisporigera_2: require('./amanita_bisporigera_2.jpg'), 
+    amanita_ocreata_thumb: require('./amanita_ocreata_thumb.jpg'),
+    amanita_ocreata_1: require('./amanita_ocreata_1.jpg'),
+    amanita_ocreata_2: require('./amanita_ocreata_2.jpg'), 
+    amanita_smithiana_thumb: require('./amanita_smithiana_thumb.jpg'),
+    amanita_smithiana_1: require('./amanita_smithiana_1.jpg'),
+    amanita_smithiana_2: require('./amanita_smithiana_2.jpg'), 
+    amanita_muscaria_thumb: require('./amanita_muscaria_thumb.jpg'),
+    amanita_muscaria_1: require('./amanita_muscaria_1.jpg'),
+    amanita_muscaria_2: require('./amanita_muscaria_2.jpg'), 
+    amanita_muscaria_3: require('./amanita_muscaria_3.jpg'), 
+    amanita_porphyria_thumb: require('./amanita_porphyria_thumb.jpg'),
+    amanita_porphyria_1: require('./amanita_porphyria_1.jpg'),
+    amanita_porphyria_2: require('./amanita_porphyria_2.jpg'), 
+    amanita_pantherina_thumb: require('./amanita_pantherina_thumb.jpg'),
+    amanita_pantherina_1: require('./amanita_pantherina_1.jpg'),
+    amanita_pantherina_2: require('./amanita_pantherina_2.jpg'), 
+    amanita_pantherina_3: require('./amanita_pantherina_3.jpg'), 
+
+
+
+
+
+
+
+
 };
 
 export default Imap;
