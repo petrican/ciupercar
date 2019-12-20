@@ -137,7 +137,7 @@ const Deadly_StackNavigator = createStackNavigator({
   Deadly: {
     screen: Deadly,
     navigationOptions: ({navigation}) => ({
-      title: 'Otravitoare',
+      title: 'Toxice si Mortale',
       headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
       headerRight: <Search />,
       headerStyle: {
